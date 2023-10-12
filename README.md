@@ -17,14 +17,14 @@ mqtt_conflags              | |
 mqtt_dupflag               | | 
 mqtt_hdrflags              | | 
 mqtt_kalive                | | Kepp-alive interval used for MQTT connections
-mqtt_len                   | | Length of MQTT packets
+mqtt_len                   |not null, | Length of MQTT packets
 mqtt_msg                   | | MQTT messages
-mqtt_msgid                 | | MQTT message ID 
+mqtt_msgid                 |not null, | MQTT message ID 
 mqtt_msgtype               | | Type of MQTT message 
-mqtt_proto_len             | | Length related to MQTT protocol
-mqtt_protoname             | | Name of MQTT protocol
+mqtt_proto_len             |not null, | Length related to MQTT protocol
+mqtt_protoname             |not null, | Name of MQTT protocol
 mqtt_qos                   | | Quality of service for MQTT
-mqtt_retain                | | Reain flag for MQTT
+mqtt_retain                | | Retain flag for MQTT
 mqtt_sub_qos               | | Quality of Service level for MQTT subscription
 mqtt_suback_qos            | | Quality of Service level in MQTT subscription acknowledgments
 mqtt_ver                   | | MQTT protocol version
@@ -32,5 +32,5 @@ mqtt_willmsg               | | The "last will" message in MQTT
 mqtt_willmsg_len           | | Length of the MQTT "last will" message
 mqtt_willtopic             | | MQTT "last will" topic
 mqtt_willtopic_len         | | Length of the MQTT "last will" topic
-target                     | legitimate/dos/malformed/slowite/bruteforcenot, not null, | Attack or not, if attack then what kind
+target                     | legitimate/dos/malformed/slowite/bruteforcenot, not null, string | Attack or not, if attack then what kind
 dataset                    | boolean, not null | Test or Train data set

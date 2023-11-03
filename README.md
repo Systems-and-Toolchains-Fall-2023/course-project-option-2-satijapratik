@@ -1,5 +1,20 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/yDpbj8_M)
 ##############################################################################################################
+
+About the project:
+
+In this project, we are taking the MQTT dataset from Kaggle and integrating it in to a Postgress table. We then used python to do some intial analysis on the table via Pyspark and do preprocessing to prepar the data for use in a machine learning model. We will build two seperate models to analyze the data, one using Pyspark and one using TensorFlow. The models will have different classifiers and regressors, which will each be tuned and then the best model will be chosen. Finally, we will run the models in the cloud using Google Cloud Compute and create a final report on the results.
+##############################################################################################################
+
+About the dataset:
+
+"The [MQTT data set] is related to a smart home environment where sensors retrieve information about temperature, light, humidity, CO-Gas, motion, smoke, door and fan with different time interval since the behaviour of each sensor is different with the others."
+
+This dataset was chosen for its applications to the real world, where information from various sensors or inputs will need to be interpreted to gleam some insight not readily available to the human eye.
+
+The dataset itself along with more information can be found at https://www.kaggle.com/datasets/cnrieiit/mqttset/.
+
+##############################################################################################################
 # Column                   |Contraints and type | Description                                                # 
 ##############################################################################################################
 tcp_flags                  |not nullable, hex   | TCP flags

@@ -50,5 +50,5 @@ mqtt_willmsg               |not nullable, double| The "last will" message in MQT
 mqtt_willmsg_len           |not nullable, double| Length of the MQTT "last will" message
 mqtt_willtopic             |not nullable, double| MQTT "last will" topic
 mqtt_willtopic_len         |not nullable, double| Length of the MQTT "last will" topic
-target                     |legitimate/dos/malformed/slowite/bruteforce, not nullable, string | Attack or not, if attack then what kind
+target                     |legitimate/dos/malformed/slowite/bruteforce/Flooding, not nullable, string | Attack or not, if attack then what kind
 train                      |int, not nullable   | Test (0) or Train (1) dataset

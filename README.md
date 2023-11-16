@@ -59,19 +59,19 @@ About the models:
 Pyspark ML:
 1 - The first model chosen was a Linear Regression using the pyspark ML package. The model was tuned using regParam and maxIter, or the learning 
     rate and the maximum number of epochs run before stopping. 
-    The testing accuracy after hyperparameter tuning was ____%
+    The testing accuracy after hyperparameter tuning was 83.11%
 
 2 - The second model run through the pyspark ML package was a Random Forest Decision Tree. This model was tuned using maxDepth and numTrees as
     hyperparameters, which are paremters representing the maximum depth any given tree can go and how many trees are averaged for the final 
     random forest. 
-    The testing accuracy after hyperparameter tuning was ____%
+    The testing accuracy after hyperparameter tuning was 86.76%
 
 Pytorch:
 1 - The first pytorch model trained was a deep neural network, with 4 hidden layers and 128 neurons in each layer. The activation function chosen
     was RReLU, the loss function was cross entropy, and the adam optimizer was picked. The final learning rate chosen was 0.005 with a decay rate of
     0.995. 
-    The testing accuracy after hyperparameter tuning was ____%
+    The testing accuracy after hyperparameter tuning was 83.21%%
 
-2 - The second pytorch model trained was a shallowe neural network, with 2 hidden layers of 8 neurons each. The activation function chosen this time 
+2 - The second pytorch model trained was a shallow neural network, with 2 hidden layers of 8 neurons each. The activation function chosen this time 
     was ReLU, the loss function and optimizer remained the same. The final learning rate chosen was 0.05 with no decay rate. 
-    The testing accuracy after hyperparameter tuning was ____%
+    The testing accuracy after hyperparameter tuning was 83.31%

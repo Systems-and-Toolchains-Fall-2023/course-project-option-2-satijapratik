@@ -55,18 +55,22 @@ To better understand our dataset, we decided on constraints and description for 
 ### PySpark ML
 
 1. Linear Regression:
-   - Hyperparameters: regParam, maxIter
-   - Testing Accuracy: 83.11%
+   - Hyperparameters:
+        - regParam: Influences how well or poorly the regressor fits to the curve
+        - maxIter: controls how long each model would train for before stopping, the quicker we stop the less likely we are to overfitting
+   - Testing Accuracy after Hyperparameter tuning: 83.11%
 
-2. Random Forest Decision Tree:
-   - Hyperparameters: maxDepth, numTrees
-   - Testing Accuracy: 86.76%
+3. Random Forest Decision Tree:
+   - Hyperparameters:
+        - maxDepth: How deep any given tree would go; greater max depth would take longer to train, but would be increase accuracy
+        - numTrees: How many trees make up the maxdepth, more tress results in more randsomness, in turn the model will be less liekly to overfit
+   - Testing Accuracy after Hyperparameter tuning: 86.76%
 
 ### PyTorch
 
 1. Deep Neural Network:
    - Architecture: 4 hidden layers, 128 neurons each
-   - Activation: RReLU, Loss: Cross Entropy, Optimizer: Adam
+   - Activation: RReLU (to have a little randomness), Loss: Cross Entropy, Optimizer: Adam
    - Learning Rate: 0.005, Decay Rate: 0.995
    - Testing Accuracy: 83.21%
 
@@ -82,6 +86,11 @@ The following video contains a clear and concise walkthrough of our code from Ta
 https://cmu.box.com/s/0u2fkt3g2r9tlgy6dyb7ya2jbs7c0krv
 ### Screen recroding for Task 1 and 2 on cloud
 https://cmu.box.com/s/20vkxi44ji219tgekqo7sq0zi3vqj9v2
+### Essentials to run the code:
+1. Please make sure that the correct path to the .csv files is given in order to import the data correctly
+2. Please make sure all the necessary libraries have been downloaded before hand
+3. The .jars file for Postgres should be placed in the JARS folder.
+4. Since we ran the extra credit part using our credentials, you will not be able to run the postgresql unless you use your credentials. 
 
 
 
